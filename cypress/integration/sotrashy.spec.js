@@ -27,4 +27,10 @@ context('Actions', () => {
     cy.get('#xmastreetons').click({force: true})
   })
 
+  it('clicks all the sorting buttons', () => {
+    cy.get('#sort-ascending').click({force: true})
+    cy.get('#sort-descending').click({force: true})
+    cy.get('#sort-alphabetical').click({force: true})
+  })
+
 })
